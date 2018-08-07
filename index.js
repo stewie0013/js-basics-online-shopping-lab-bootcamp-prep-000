@@ -18,7 +18,13 @@ function addToCart(item) {
 }
 
 function viewCart() {
-  this.gay = true
+  var retString = "In your cart, you have "
+  for (var i = 0; i < cart.length; i++) {
+    retString += `${cart[i].itemName} at ${cart[i].itemPrice}`
+    if (i !== cart.length) {
+      retString += ", "
+    }
+  }
 }
 
 function total() {
@@ -32,6 +38,3 @@ function removeFromCart(item) {
 function placeOrder(cardNumber) {
   // write your code here
 }
-
-var t = new viewCart()
-console.log(t.gay)
