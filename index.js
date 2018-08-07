@@ -18,7 +18,7 @@ function addToCart(item) {
 }
 
 function viewCart() {
-  // write your code here
+  this.gay = true
 }
 
 function total() {
@@ -32,3 +32,6 @@ function removeFromCart(item) {
 function placeOrder(cardNumber) {
   // write your code here
 }
+
+var t = new viewCart()
+console.log(t.gay)
